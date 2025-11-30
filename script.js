@@ -3,6 +3,7 @@ const API_KEY = 'AIzaSyCBfBhdZkbTTsxxNbDgpKo_0Xl--tDPBDA';
 const CHANNEL_IDS = [
     'UCYnvxJ-PKiGXo_tYXpWAC-w', // Micode
     'UCdV6JBe40vqPQOsG4boS5zQ', // TRY
+    'UCZU9T1ceaOgwfLRq7OKFU4Q', // Linkin Park
 ];
 
 const MAX_RESULTS_PER_CHANNEL = 5; // Nombre de vidéos à récupérer par chaîne
