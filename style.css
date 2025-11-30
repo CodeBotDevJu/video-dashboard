@@ -1,0 +1,99 @@
+:root {
+    --primary-color: #ff0000;
+    --background-color: #121212;
+    --text-color: #ffffff;
+    --card-bg: #1e1e1e;
+}
+
+/* Style de base */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--card-bg);
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid var(--primary-color);
+    margin-bottom: 20px;
+}
+
+/* Conteneur du tableau de bord (grille) */
+#video-dashboard {
+    display: grid;
+    /* Crée une grille de colonnes responsives */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Style de la carte de chaque vidéo */
+.video-card {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s;
+}
+
+.video-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.7);
+}
+
+.video-thumbnail {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.video-info {
+    padding: 15px;
+}
+
+.video-info h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    height: 3.3em; /* Limite le titre à 3 lignes */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.video-info p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #aaaaaa;
+}
+
+.channel-name {
+    color: var(--primary-color);
+    font-weight: bold;
+    display: block;
+    margin-top: 5px;
+}
+
+/* Lien pour rendre la carte cliquable */
+.video-card a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+/* Style pour le message de chargement/erreur */
+.loading, .error {
+    grid-column: 1 / -1; /* Prend toute la largeur de la grille */
+    text-align: center;
+    padding: 50px;
+    font-size: 1.2em;
+}
+
+.error {
+    color: var(--primary-color);
+}
