@@ -5,6 +5,7 @@ const CHANNEL_IDS = [
     'UCdV6JBe40vqPQOsG4boS5zQ', // TRY
     'UCZU9T1ceaOgwfLRq7OKFU4Q', // Linkin Park
     'UCnxEvD2eagj2VgtkFL5wDHA', // V2F
+    'UCWedHS9qKebauVIK2J7383g', // Underscore_
 ];
 
 const MAX_RESULTS_PER_CHANNEL = 5; // Nombre de vidéos à récupérer par chaîne
